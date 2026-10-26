@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>بطاطساية | BATATSAYA</title>
+  <meta name="description" content="منيو بطاطساية | BATATSAYA menu">
+  <meta name="theme-color" content="#FFC72C">
+  <link rel="icon" href="logo.png">
+  <!-- الخطوط اختيارية: إن لم تتوفر يستخدم المتصفح خطوط النظام -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600;800&family=Cairo:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top" id="top">
+    <header class="bar">
+      <a class="brand" href="#hero" aria-label="BATATSAYA"><img src="logo.png" alt="بطاطساية | BATATSAYA" width="48" height="48"></a>
+      <button class="lang" id="langBtn" type="button" aria-label="Switch language">English</button>
+    </header>
+    <nav class="tabs" id="tabs" aria-label="أقسام المنيو"></nav>
+  </div>
+
+  <section class="hero" id="hero">
+    <img class="hero-logo" src="logo.png" alt="" width="170" height="170">
+    <h1><span class="h-ar">بطاطساية</span><span class="h-en">BATATSAYA</span></h1>
+    <p class="tagline" data-i18n="tagline">اختر بطاطسك وصوصك</p>
+  </section>
+  <svg class="drip" viewBox="0 0 1200 44" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 0H1200V12C1170 12 1160 14 1152 26C1144 40 1124 40 1116 26C1108 14 1090 12 1060 12H900C880 12 874 16 868 28C862 42 842 42 836 28C830 16 820 12 800 12H520C500 12 494 16 488 30C482 44 460 44 454 30C448 16 440 12 420 12H210C190 12 184 16 178 26C172 38 154 38 148 26C142 16 134 12 114 12H0Z" fill="#FFC72C"/>
+  </svg>
+
+  <main class="wrap">
+    <p class="vat" data-i18n="vat">الأسعار غير شاملة ضريبة القيمة المضافة</p>
+    <div class="search">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M16.5 16.5L21 21" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+      <input id="search" type="search" autocomplete="off" placeholder="ابحث عن صنف" aria-label="ابحث عن صنف">
+    </div>
+    <div id="menu"></div>
+    <div class="empty" id="empty" hidden>
+      <p class="empty-t" id="emptyT"></p>
+      <p class="empty-s" id="emptyS"></p>
+      <button type="button" class="clear" id="clearBtn"></button>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <p class="foot-brand">BATATSAYA | بطاطساية</p>
+    <p class="foot-vat" data-i18n="vat">الأسعار غير شاملة ضريبة القيمة المضافة</p>
+    <p class="foot-copy"><span id="year"></span> © <span data-i18n="rights">جميع الحقوق محفوظة</span></p>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="الرجوع إلى أعلى الصفحة">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <script src="script.js"></script>
+</body>
+</html>
